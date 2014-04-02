@@ -21,74 +21,98 @@ header
 		padding-top 5px
 		text-shadow 5px 5px 10px #B8B8B8
 
-#titulo
-	border 0px solid red
-	float left	
-	margin 5px
+section
+	background #F8F8F8
+	text-align center
+	padding 20px
+
+footer
+	background rgba(0,0,0,0.8)	
+	height 210px
+	padding 5px	
+
+form
 	padding 5px
+
+hr
+	background #0D92E4
+	height 30px
+	margin 0
+
+input
+	margin-bottom 5px	
+	width 230px
+	border-radius 5px
+
+#botones_encabezado
+	border 0px solid red
+
+#formcontacto
+	color black
+	float right
+	text-align center
+
+#imginventarios
+	background url(../img/inventarios2.png)
+	background-size 100% 100%
+	height 256px
+	transition width 1s, height 1s
+	width 256px	
+#imgmusica
+	background url(../img/musica.png)
+	background-size 100% 100%
+	height 256px
+	transition width 1s, height 1s
+	width 256px	
+
+#imginventarios:hover	
+	height 276px
+	width 276px
+#imgmusica:hover	
+	height 276px
+	width 276px
+
+#infocontacto
+	color white
+	float left
+
+#inventarios, #musica
+	background #D8D8D8
+	border-radius 10px
+	box-shadow 5px 5px 10px rgba(0,0,0,0.5)
+	max-width 30%
+	margin 10px	
+	padding 20px	
+	text-align center
+
 #logo	
 	background url(../img/logoapo.png)
 	background-size 100% 100%
 	height 60px
 	width 170px
+
 #opciones_encabezado
 	border 0px solid red
 	float right
 	margin 5px
 	padding 5px
 	text-align center
+
 #redes
 	padding 5px
-#botones_encabezado
+
+#titulo
 	border 0px solid red
+	float left	
+	margin 5px
+	padding 5px
 
 .imgredes
 	height 64px
 	width 64px
-hr
-	background #0D92E4
-	height 30px
-	margin 0
-section
-	background #F8F8F8
-	text-align center
-	padding 20px
-#inventarios, #musica
-		background #D8D8D8
-		border-radius 10px
-		box-shadow 5px 5px 10px rgba(0,0,0,0.5)
-		max-width 30%
-		margin 10px	
-		padding 20px	
-		text-align center
-#imginventarios
-	background url(../img/inventarios2.png)
-	background-size 100% 100%
-	height 256px
-	width 256px	
-#imgmusica
-	background url(../img/musica.png)
-	background-size 100% 100%
-	height 256px
-	width 256px	
-
-#imginventarios:hover	
-	height 266px
-	width 266px
-#imgmusica:hover	
-	height 266px
-	width 266px
 	
-footer
-	background rgba(0,0,0,0.8)	
-	padding 20px	
-#infocontacto
-	color white
-	float left
-#formcontacto
-	color #dcdcdc
-	float right
-	padding 20px
-	text-align center
+[required]	
+	border-radius 5px	
+	box-shadow 0px 0px 4px #0D92E4
 
 @import "responsive.styl"
