@@ -78,7 +78,7 @@ input
 
 #inventarios, #musica
 	background #D8D8D8
-	border-radius 10px
+	border-radius 0px 40px 0px 40px
 	box-shadow 5px 5px 10px rgba(0,0,0,0.5)
 	max-width 30%
 	margin 10px	
@@ -99,7 +99,8 @@ input
 	text-align center
 
 #redes
-	padding 5px
+	margin 0
+	padding 0
 
 #titulo
 	border 0px solid red
@@ -107,10 +108,57 @@ input
 	margin 5px
 	padding 5px
 
-.imgredes
+.imgredes	
+	border-radius 5px
+	box-shadow 0px 0px 10px black
+	-webkit-box-shadow 0px 0px 10px black
 	height 64px
 	width 64px
-	
+
+	animation parpadeo 5s
+	-webkit-animation parpadeo 5s
+	animation-iteration-count infinite
+	-webkit-animation-iteration-count infinite	
+
+@keyframes parpadeo
+	0% 
+		box-shadow 0px 0px 10px rgba(0,0,0,0.3)
+	50% 
+		box-shadow 0px 0px 50px rgba(0,0,0,0.3)
+	100% 
+		box-shadow 0px 0px 10px rgba(0,0,0,0)
+
+@-webkit-keyframes parpadeo
+	0% 
+		-webkit-box-shadow 0px 0px 10px white
+	50% 
+		-webkit-box-shadow 0px 0px 50px white
+	100% 
+		-webkit-box-shadow 0px 0px 10px white
+
+.imgredes:hover
+	height 65px
+	opacity .7
+	width 65px
+
+.efecto_logo
+	-webkit-transition-duration 0.8s
+	-moz-transition-duration 0.8s
+	-o-transition-duration 0.8s
+	transition-duration 0.8s
+	-webkit-transition-property -webkit-transform
+	-moz-transition-property -moz-transform
+	-o-transition-property -o-transform
+	transition-property transform
+	overflow hidden
+
+.efecto_logo:hover 
+	-webkit-transition all 200s linear 0s /* Se agrega esto para que sea mas lento las vueltas */
+	-webkit-transform rotate(36000deg)
+	-moz-transform rotate(36000deg) /* En vez de girarlo 30° grados se gira 36000° */
+	-o-transform rotate(36000deg)
+
+
 [required]	
 	border-radius 5px	
 	box-shadow 0px 0px 4px #0D92E4
